@@ -1,0 +1,799 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portal Informasi Lampung</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+
+<body class="font-sans bg-white">
+
+ <header class="bg-gray-900 text-white px-4 py-3 flex justify-between items-center">
+  <div class="flex items-center gap-2">
+    <img src="/public/LogoDiskominfotik.png" alt="Logo Diskominfo" class="h-8" />
+    <div>
+      <p class="text-sm font-semibold">Dinas Komunikasi Informatika dan Statistik</p>
+      <p class="text-xs">Provinsi Lampung</p>
+    </div>
+  </div>
+  <div class="flex gap-6 text-sm items-center relative">
+    <a href="index.html" class="hover:underline">Beranda</a>
+  <div class="relative">
+    <div class="flex gap-6 text-sm items-center relative">
+    <a href="https://docs.google.com/spreadsheets/d/1cGULsDKcljPo8k3whHuBteYX02xe5aqlge98jkJFicQ/edit?usp=sharing" class="hover:underline">Spreadsheets</a>
+  <div class="relative">
+ <button id="dropdownButton" class="hover:underline flex items-center gap-1 focus:outline-none">
+  Perangkat Daerah
+  <svg class="w-4 h-4 fill-current ml-1" viewBox="0 0 20 20">
+    <path d="M5.25 7.5l4.75 4.75 4.75-4.75H5.25z" />
+  </svg>
+</button>
+
+<!-- Dropdown Menu -->
+<div id="dropdownMenu" class="absolute hidden right-0 bg-white text-black mt-2 rounded shadow z-20 w-64 max-h-60 overflow-y-auto">
+  <a href="BadanKepegawaianDaerah.html" class="block px-4 py-2 hover:bg-gray-100">Badan Kepegawaian Daerah</a>
+  <a href="BadanKesatuanBangsadanPolitik.html" class="block px-4 py-2 hover:bg-gray-100">Badan Kesatuan Bangsa dan Politik</a>
+  <a href="BadanPenanggulanganBencanaDaerah.html" class="block px-4 py-2 hover:bg-gray-100">Badan Penanggulangan Bencana Daerah</a>
+  <a href="BadanPendapatanDaerah.html" class="block px-4 py-2 hover:bg-gray-100">Badan Pendapatan Daerah</a>
+  <a href="BadanPenelitiandanPengembanganDaerah.html" class="block px-4 py-2 hover:bg-gray-100">Badan Penelitian dan Pengembangan Daerah</a>
+  <a href="BadanPengelolaKeuangandanAsetDaerah.html" class="block px-4 py-2 hover:bg-gray-100">Badan Pengelola Keuangan dan Aset Daerah</a>
+    <a href="BadanPengembanganSDM.html" class="block px-4 py-2 hover:bg-gray-100">Badan Pengembangan Sumber Daya Manusia Daerah</a>
+    <a href="BadanPenghubungProvLampung-Jakarta.html" class="block px-4 py-2 hover:bg-gray-100">Badan Penghubung Provinsi Lampung di Jakarta</a>
+    <a href="BadanPerencaanPembangunanDaerah.html" class="block px-4 py-2 hover:bg-gray-100">Badan Perencanaan Pembangunan Daerah</a>
+    <a href="BiroAdministrasiPembangunan.html" class="block px-4 py-2 hover:bg-gray-100">Biro Administrasi Pembangunan</a>
+    <a href="BiroAdministrasiPimpinan.html" class="block px-4 py-2 hover:bg-gray-100">Biro Administrasi Pimpinan</a>
+    <a href="BIroHukumSekretariatDaerah.html" class="block px-4 py-2 hover:bg-gray-100">Biro Hukum Sekretariat Daerah</a>
+    <a href="BiroKesejahteraanSosialSekretariatDaerah.html" class="block px-4 py-2 hover:bg-gray-100">Biro Kesejahteraan Sosial Sekretariat Daerah</a>
+    <a href="BiroOrganisasiSekretariatDaerah.html" class="block px-4 py-2 hover:bg-gray-100">Biro Organisasi Sekretariat Daerah</a>
+    <a href="BiroPemerintahandanOtdaSekretariatDaerah.html" class="block px-4 py-2 hover:bg-gray-100">Biro Pemerintahan dan Otda Sekretariat Daerah</a>
+    <a href="BiroPengadaanBarangdanjasaSekretariatDaerah.html" class="block px-4 py-2 hover:bg-gray-100">Biro Pengadaan Barang dan Jasa Sekretariat Daerah</a>
+    <a href="BiroPerekonomianSekretariatDaerah.html" class="block px-4 py-2 hover:bg-gray-100">Biro Perekonomian Sekretariat Daerah</a>
+    <a href="BiroUmumSekretariatDaerah.html" class="block px-4 py-2 hover:bg-gray-100">Biro Umum Sekretariat Daerah</a>
+    <a href="CSIRT-Tim.html" class="block px-4 py-2 hover:bg-gray-100">CSIRT Lampung</a>
+    <a href="DinasBinaMargadanBinaKonstruksi.html" class="block px-4 py-2 hover:bg-gray-100">Dinas Bina Marga dan Bina Konstruksi</a>
+    <a href="DinasEnergidanSDM.html" class="block px-4 py-2 hover:bg-gray-100">Dinas Energi dan Sumber Daya Mineral</a>
+    <a href="DinasKehutanan.html" class="block px-4 py-2 hover:bg-gray-100">Dinas Kehutanan Provinsi Lampung</a>
+    <a href="DinasKelautandanPerikanan.html" class="block px-4 py-2 hover:bg-gray-100">Dinas Kelautan dan Perikanan</a>
+    <a href="DinasKependudukandanPencatatanSipil.html" class="block px-4 py-2 hover:bg-gray-100">Dinas Kependudukan dan Pencatatan Sipil</a>
+    <a href="DInasKesehatan.html" class="block px-4 py-2 hover:bg-gray-100">Dinas Kesehatan Provinsi Lampung</a>
+    <a href="DinasKetahananPangandanHortikultura.html" class="block px-4 py-2 hover:bg-gray-100">Dinas Ketahanan Pangan, Tanaman Pangan dan Hortikultura</a>
+    <a href="DinasKoperasi-UKM.html" class="block px-4 py-2 hover:bg-gray-100">Dinas Koperasi, Usaha Kecil dan Menengah</a>
+    <a href="DinasLingkunganHidup.html" class="block px-4 py-2 hover:bg-gray-100">Dinas Lingkungan Hidup Provinsi Lampung</a>
+    <a href="DinasPariwisatadanEkonomiKreatif.html" class="block px-4 py-2 hover:bg-gray-100">Dinas Pariwisata dan Ekonomi Kreatif</a>
+    <a href="DinasPemberdayaanMasyarakatDesadanTransmigrasi.html" class="block px-4 py-2 hover:bg-gray-100">Dinas Pemberdayaan Masyarakat Desa dan Transmigrasi</a>
+    <a href="DinasPemberdayaanPerempuandanPerlindunganAnak.html" class="block px-4 py-2 hover:bg-gray-100">Dinas Pemberdayaan Perempuan dan Perlindungan Anak</a>
+    <a href="DInasPemudadanOlahraga.html" class="block px-4 py-2 hover:bg-gray-100">Dinas Pemuda dan Olah Raga</a>
+    <a href="DinasPenanamanModaldanPelayananTerpaduSatuPintu.html" class="block px-4 py-2 hover:bg-gray-100">Dinas Penanaman Modal dan Pelayanan Terpadu Satu Pintu</a>
+    <a href="DinasPendidikandanKebudayaan.html" class="block px-4 py-2 hover:bg-gray-100">Dinas Pendidikan dan Kebudayaan</a>
+    <a href="DinasPengelolaanSDA.html" class="block px-4 py-2 hover:bg-gray-100">Dinas Pengelolaan Sumber Daya Air</a>
+    <a href="DInasPerhubungan.html" class="block px-4 py-2 hover:bg-gray-100">Dinas Perhubungan</a>
+    <a href="DinasPerindustriandanPerdagangan.html" class="block px-4 py-2 hover:bg-gray-100">Dinas Perindustrian dan Perdagangan</a>
+    <a href="DinasPerkebunan.html" class="block px-4 py-2 hover:bg-gray-100">Dinas Perkebunan Provinsi Lampung</a>
+    <a href="DinasPerpustakaandanKearsipan.html" class="block px-4 py-2 hover:bg-gray-100">Dinas Perpustakaan dan Kearsipan</a>
+    <a href="DinasPermahanKawasanPemukimandanCiptaKarya.html" class="block px-4 py-2 hover:bg-gray-100">Dinas Perumahan, Kawasan Pemukiman dan Cipta Karya</a>
+    <a href="DinasPeternakandanKesehatanHewan.html" class="block px-4 py-2 hover:bg-gray-100">Dinas Peternakan dan Kesehatan Hewan</a>
+    <a href="DinasSosisal.html" class="block px-4 py-2 hover:bg-gray-100">Dinas Sosial Provinsi Lampung</a>
+    <a href="DinasTenagaKErja.html" class="block px-4 py-2 hover:bg-gray-100">Dinas Tenaga Kerja Provinsi Lampung</a>
+    <a href="diskominfotik.html" class="block px-4 py-2 hover:bg-gray-100">Dinas Komunikasi Informatika dan Statistik</a>
+    <a href="Inspektroat.html" class="block px-4 py-2 hover:bg-gray-100">Inspektorat</a>
+    <a href="RSJiwaDaerah.html" class="block px-4 py-2 hover:bg-gray-100">RS Jiwa Daerah</a>
+    <a href="RSUDAbdoelMoeloek.html" class="block px-4 py-2 hover:bg-gray-100">RSUD Abdoel Moeloek</a>
+    <a href="RSUDBandarNegaraHusada.html" class="block px-4 py-2 hover:bg-gray-100">RSUD Bandar Negara Husada</a>
+    <a href="SatuanPolisiPamongPraja.html" class="block px-4 py-2 hover:bg-gray-100">Satuan Polisi Pamong Praja</a>
+    <a href="SekretariatDPRDProvLampung.html" class="block px-4 py-2 hover:bg-gray-100">Sekretariat DPRD Provinsi Lampung</a>
+</div>
+
+</div>
+
+</header>
+
+
+  <!-- Hero Section -->
+  <section class="relative h-screen bg-cover bg-center" style="background-image: url('/public/banner bg.jpeg');">
+    <div class="absolute inset-0 bg-black bg-opacity-50 z-0"></div>
+    <div class="absolute inset-0 flex flex-col items-center justify-center text-center text-white px-4 z-10">
+      <h1 class="text-4xl md:text-5xl font-bold mb-6">KATALOG SISTEM INFORMASI OPD PEMPROV LAMPUNG</h1>
+      <div class="relative w-full max-w-xl mx-auto mt-6">
+  <input 
+    type="text" 
+    id="search-input" 
+    placeholder="Ketik Nama Organisasi Daerah..." 
+    class="w-full px-6 py-3 rounded-full text-black shadow focus:outline-none" 
+  />
+  <ul 
+    id="search-results" 
+    class="absolute bg-white text-black mt-2 rounded-lg shadow hidden z-10 w-full max-h-60 overflow-y-auto"
+  ></ul>
+</div>
+      <a 
+        href="#perangkat" 
+        class="mt-10 bg-white text-black px-6 py-2 rounded-full hover:bg-gray-300 font-semibold scroll-link"
+      >
+        Selengkapnya
+      </a>
+    </div>
+  </section>
+
+<section id="perangkat" class="bg-[#1f2a44] text-white py-8 px-4 text-center">
+  <div class="max-w-7xl mx-auto px-4">
+    <h2 class="text-4xl md:text-5xl font-bold text-center mb-4">PERANGKAT DAERAH</h2>
+    <div class="h-10"></div>
+    <div class="max-w-6xl mx-auto">
+      <input 
+        type="text" 
+        id="searchInput" 
+        placeholder="Ketik nama instansi..." 
+        class="w-full max-w-xl mx-auto px-6 py-3 rounded-full text-black shadow border" 
+      />
+    </div>
+  </div>
+</section>
+
+  <!-- Carousel -->
+
+<section class="bg-[#1f2a44] text-white py-12">
+  <div class="max-w-7xl mx-auto px-4">
+    <h2 class="text-xl font-bold"></h2>
+    <div class="swiper swiperBagian2 px-10">
+      <div class="swiper-wrapper [row-gap:3rem] ">
+        
+        <div class="swiper-slide" data-title="Badan Kepegawaian Daerah">
+        <a href="BadanKepegawaianDaerah.html">
+          <div class="bg-white text-black rounded-xl p-4 text-center shadow">
+            <img src="/public/Badan Kepegawaian.jpg" alt="Instansi 26" class="mx-auto h-16 mb-3" />
+            <h3 class="text-sm font-semibold">Badan Kepegawaian Daerah Provinsi Lampung</h3>
+          </div>
+        </a>
+        </div>
+
+        <div class="swiper-slide" data-title="Badan Kesatuan Bangsa dan Politik">
+            <a href="BadanKesatuanBangsadanPolitik.html">
+          <div class="bg-white text-black rounded-xl p-4 text-center shadow">
+            <img src="/public/Badan Kesatuan Bangsa dan Politik.png" alt="Instansi 26" class="mx-auto h-16 mb-3" />
+            <h3 class="text-sm font-semibold">Badan Kesatuan Bangsa dan Politik</h3>
+          </div>
+        </a>
+        </div>
+
+        <div class="swiper-slide" data-title="Badan Penanggulangan Bencana Daerah">
+            <a href="BadanPenanggulanganBencanaDaerah.html" >
+          <div class="bg-white text-black rounded-xl p-4 text-center shadow">
+            <img src="/public/Badan Penanggulangan Bencana Daerah.png" alt="Instansi 26" class="mx-auto h-16 mb-3" />
+            <h3 class="text-sm font-semibold">Badan Penanggulangan Bencana Daerah</h3>
+          </div>
+        </a>
+         </div>
+
+         <div class="swiper-slide" data-title="Badan Pendapatan Daerah">
+          <a href="BadanPendapatanDaerah.html">
+          <div class="bg-white text-black rounded-xl p-4 text-center shadow">
+            <img src="/public/Badan Pendapatan Daerah.png" alt="Instansi 26" class="mx-auto h-16 mb-3" />
+            <h3 class="text-sm font-semibold">Badan Pendapatan Daerah Provinsi Lampung</h3>
+          </div>
+        </a>
+         </div>
+           
+         <div class="swiper-slide" data-title="Badan Penelitian Pengembangan Daerah">
+        <a href="BadanPenelitiandanPengembanganDaerah.html">
+          <div class="bg-white text-black rounded-xl p-4 text-center shadow">
+            <img src="/public/Badan Penelitian dan Pengembangan Daerah.png" alt="Instansi 26" class="mx-auto h-16 mb-3" />
+            <h3 class="text-sm font-semibold">Badan Penelitian dan Pengembangan Daerah</h3>
+          </div>
+        </a>
+         </div>
+           
+
+         <div class="swiper-slide" data-title="Badan Pengelola Keuangan dan Aset Daerah">
+          <a href="BadanPengelolaKeuangandanAsetDaerah.html" >
+          <div class="bg-white text-black rounded-xl p-4 text-center shadow">
+            <img src="/public/Badan Pengelola Keuangan dan Aset Daerah.png" alt="Instansi 26" class="mx-auto h-16 mb-3" />
+            <h3 class="text-sm font-semibold">Badan Pengelola Keuangan dan Aset Daerah</h3>
+          </div>
+        </a>
+         </div>
+            
+        <div class="swiper-slide" data-title="Badan Pengembangan SDM">
+        <a href="BadanPengembanganSDM.html">
+          <div class="bg-white text-black rounded-xl p-4 text-center shadow">
+            <img src="/public/Badan Pengembangan Sumber Daya Manusia Daerah.png" alt="Instansi 26" class="mx-auto h-16 mb-3" />
+            <h3 class="text-sm font-semibold">Badan Pengembangan SDM Daerah</h3>
+          </div>
+        </a>
+        </div>
+
+      <div class="swiper-slide" data-title="Badan Penghubung Provinsi Lampung di Jakarta">
+        <a href="BadanPenghubungProvLampung-Jakarta.html">
+          <div class="bg-white text-black rounded-xl p-4 text-center shadow">
+            <img src="/public/Badan Penghubung Provinsi Lampung di Jakarta.png" alt="Instansi 26" class="mx-auto h-16 mb-3" />
+            <h3 class="text-sm font-semibold">Badan Penghubung Prov Lampung di Jakarta</h3>
+          </div>
+        </a>
+      </div>
+            
+      <div class="swiper-slide" data-title="Badan Perencanaan Pembangunan Daerah">
+            <a href="BadanPerencaanPembangunanDaerah.html" class= "swiper-slide">
+          <div class="bg-white text-black rounded-xl p-4 text-center shadow">
+            <img src="/public/Badan Perencanaan Pembangunan Daerah.png" alt="Instansi 26" class="mx-auto h-16 mb-3" />
+            <h3 class="text-sm font-semibold">Badan Perencanaan Pembangunan Daerah</h3>
+          </div>
+        </a>
+        </div>
+
+        <div class="swiper-slide" data-title="Biro Administrasi Pembangunan">
+            <a href="BiroAdministrasiPembangunan.html" class="swiper-slide ">
+          <div class="bg-white text-black rounded-xl p-4 text-center shadow">
+            <img src="/public/Biro Administrasi Pembangunan.png" alt="Instansi 26" class="mx-auto h-16 mb-3" />
+            <h3 class="text-sm font-semibold">Biro Administrasi Pembangunan</h3>
+          </div>
+        </a>
+        </div>
+
+          <div class="swiper-slide" data-title="Biro Administrasi Pimpinan">
+            <a href="BiroAdministrasiPimpinan.html" class="swiper-slide">
+          <div class="bg-white text-black rounded-xl p-4 text-center shadow">
+            <img src="/public/Biro Administrasi Pimpinan.png" alt="Instansi 26" class="mx-auto h-16 mb-3" />
+            <h3 class="text-sm font-semibold">Biro Administrasi Pimpinan Provinsi Lampung</h3>
+          </div>
+        </a>
+        </div>
+
+      
+           <div class="swiper-slide" data-title="Biro Hukum Sekretariat Daerah">
+  <a href="BIroHukumSekretariatDaerah.html">
+    <div class="bg-white text-black rounded-xl p-4 text-center shadow">
+      <img alt="Instansi 26" class="mx-auto h-16 mb-3" src="/public/Biro Hukum Sekretariat Daerah.png"/>
+      <h3 class="text-sm font-semibold">Biro Hukum Sekretariat Daerah</h3>
+    </div>
+  </a>
+</div>
+
+           <div class="swiper-slide" data-title="Biro Kesejahteraan Sosial Sekretariat Daerah">
+  <a href="BiroKesejahteraanSosialSekretariatDaerah.html">
+    <div class="bg-white text-black rounded-xl p-4 text-center shadow">
+      <img alt="Instansi 26" class="mx-auto h-16 mb-3" src="/public/Biro Kesejahteraan Sosial Sekretariat Daerah.png"/>
+      <h3 class="text-sm font-semibold">Biro Kesejahteraan Sosial Sekretariat Daerah</h3>
+    </div>
+  </a>
+</div>
+
+<div class="swiper-slide" data-title="Biro Organisasi Sekretariat Daerah">
+<a href="BiroOrganisasiSekretariatDaerah.html" >
+          <div class="bg-white text-black rounded-xl p-4 text-center shadow">
+            <img src="/public/Biro Organisasi Sekretariat Daerah.png" alt="Instansi 26" class="mx-auto h-16 mb-3" />
+            <h3 class="text-sm font-semibold">Biro Organisasi Sekretariat Daerah</h3>
+          </div>
+        </a>
+</div>
+
+<div class="swiper-slide" data-title="Biro Pemerintahan Otda Sekretariat Daerah">
+<a href="BiroPemerintahandanOtdaSekretariatDaerah.html">
+          <div class="bg-white text-black rounded-xl p-4 text-center shadow">
+            <img src="/public/Biro Pemerintahan dan Otda Sekretariat Daerah.png" alt="Instansi 26" class="mx-auto h-16 mb-3" />
+            <h3 class="text-sm font-semibold">Biro Pemerintahan dan Otda Sekretariat Daerah</h3>
+          </div>
+        </a>
+</div>
+            <div class="swiper-slide" data-title="Biro Pengadaan Barang Jasa Sekretariat Daerah">
+            <a href="BiroPengadaanBarangdanjasaSekretariatDaerah.html">
+          <div class="bg-white text-black rounded-xl p-4 text-center shadow">
+            <img src="/public/Biro Pengadaan Barang dan Jasa Sekretariat Daerah.png" alt="Instansi 26" class="mx-auto h-16 mb-3" />
+            <h3 class="text-sm font-semibold">Biro Pengadaan Barang Jasa Sekretariat Daerah</h3>
+          </div>
+        </a>
+        </div>
+
+        <div class="swiper-slide" data-title="Biro Perekonomian Sekretariat Daerah">
+            <a href="BiroPerekonomianSekretariatDaerah.html" >
+          <div class="bg-white text-black rounded-xl p-4 text-center shadow">
+            <img src="/public/Biro Perekonomian Sekretariat Daerah.png" alt="Instansi 26" class="mx-auto h-16 mb-3" />
+            <h3 class="text-sm font-semibold">Biro Perekonomian Sekretariat Daerah</h3>
+          </div>
+        </a>
+        </div>
+
+        <div class="swiper-slide" data-title="Biro Umum Sekretariat Daerah">
+          <a href="BiroUmumSekretariatDaerah.html">
+          <div class="bg-white text-black rounded-xl p-4 text-center shadow">
+            <img src="/public/Biro Umum Sekretariat Daerah.png" alt="Instansi 26" class="mx-auto h-16 mb-3" />
+            <h3 class="text-sm font-semibold">Biro Umum Sekretariat Daerah</h3>
+          </div>
+        </a>
+        </div>
+            
+         <div class="swiper-slide" data-title="Computer Security Incident Response Team">
+            <a href="CSIRT-Tim.html">
+          <div class="bg-white text-black rounded-xl p-4 text-center shadow">
+            <img src="/public/CSIRT LAMPUNG.png" alt="Instansi 26" class="mx-auto h-16 mb-3" />
+            <h3 class="text-sm font-semibold">Computer Security Incident Response Team</h3>
+          </div>
+        </a>
+        </div>
+
+         <div class="swiper-slide" data-title="Dinas Bina Marga dan Bina Konstruksi">
+             <a href="DinasBinaMargadanBinaKonstruksi.html">
+          <div class="bg-white text-black rounded-xl p-4 text-center shadow">
+            <img src="/public/Dinas Bina Marga dan Bina Konstruksi.png" alt="Instansi 26" class="mx-auto h-16 mb-3" />
+            <h3 class="text-sm font-semibold">Dinas Bina Marga dan Bina Konstruksi</h3>
+          </div>
+        </a>
+        </div>
+
+         <div class="swiper-slide" data-title="Dinas Energi dan Sumber Daya Mineral">
+             <a href="DinasEnergidanSDM.html">
+          <div class="bg-white text-black rounded-xl p-4 text-center shadow">
+            <img src="/public/Dinas Energi dan Sumber Daya Mineral.png" alt="Instansi 26" class="mx-auto h-16 mb-3" />
+            <h3 class="text-sm font-semibold">Dinas Energi dan Sumber Daya Mineral</h3>
+          </div>
+        </a>
+        </div>
+
+         <div class="swiper-slide" data-title="Dinas Kehutanan Provinsi Lampung">
+             <a href="DinasKehutanan.html">
+          <div class="bg-white text-black rounded-xl p-4 text-center shadow">
+            <img src="/public/Dinas Kehutanan.png" alt="Instansi 26" class="mx-auto h-16 mb-3" />
+            <h3 class="text-sm font-semibold">Dinas Kehutanan Provinsi Lampung</h3>
+          </div>
+        </a>
+        </div>
+
+         <div class="swiper-slide" data-title="Dinas Kelautan dan Perikanan">
+            <a href="DinasKelautandanPerikanan.html">
+          <div class="bg-white text-black rounded-xl p-4 text-center shadow">
+            <img src="/public/Dinas Kelautan dan Perikanan.png" alt="Instansi 26" class="mx-auto h-16 mb-3" />
+            <h3 class="text-sm font-semibold">Dinas Kelautan dan Perikanan Provinsi Lampung</h3>
+          </div>
+        </a>
+         </div>
+           
+          <div class="swiper-slide" data-title="Dinas Kependudukan dan Pencatatan Sipil">
+            <a href="DinasKependudukandanPencatatanSipil.html">
+          <div class="bg-white text-black rounded-xl p-4 text-center shadow">
+            <img src="/public/Dinas Kependudukan dan Pencatatan Sipil.png" alt="Instansi 26" class="mx-auto h-16 mb-3" />
+            <h3 class="text-sm font-semibold">Dinas Kependudukan dan Pencatatan Sipil</h3>
+          </div>
+        </a>
+          </div>
+             
+
+         <div class="swiper-slide" data-title="Dinas Kesehatan Provinsi Lampung">
+             <a href="DInasKesehatan.html" >
+          <div class="bg-white text-black rounded-xl p-4 text-center shadow">
+            <img src="/public/Dinas Kesehatan.png" alt="Instansi 26" class="mx-auto h-16 mb-3" />
+            <h3 class="text-sm font-semibold">Dinas Kesehatan Provinsi Lampung</h3>
+          </div>
+        </a>
+        </div>
+
+         <div class="swiper-slide" data-title="Dinas Ketahanan Pangan, Tanaman, Hortikultura">
+             <a href="DinasKetahananPangandanHortikultura.html">
+          <div class="bg-white text-black rounded-xl p-4 text-center shadow">
+            <img src="/public/Dinas Ketahanan Pangan, Tanaman Pangan dan Hortikultura.png" alt="Instansi 26" class="mx-auto h-16 mb-3" />
+            <h3 class="text-sm font-semibold">Dinas Ketahanan Pangan, Tanaman, Hortikultura</h3>
+          </div>
+        </a>
+        </div>
+
+         <div class="swiper-slide" data-title="Dinas Koperasi, Usaha Kecil dan Menengah">
+         <a href="DinasKoperasi-UKM.html" >
+          <div class="bg-white text-black rounded-xl p-4 text-center shadow">
+            <img src="/public/Dinas Koperasi, Usaha Kecil dan Menengah.png" alt="Instansi 26" class="mx-auto h-16 mb-3" />
+            <h3 class="text-sm font-semibold">Dinas Koperasi, Usaha Kecil dan Menengah</h3>
+          </div>
+        </a>
+         </div>
+            
+         <div class="swiper-slide" data-title="Dinas Lingkungan Hidup Provinsi Lampung">
+             <a href="DinasLingkunganHidup.html">
+          <div class="bg-white text-black rounded-xl p-4 text-center shadow">
+            <img src="/public/Dinas Lingkungan Hidup.png" alt="Instansi 26" class="mx-auto h-16 mb-3" />
+            <h3 class="text-sm font-semibold">Dinas Lingkungan Hidup Provinsi Lampung</h3>
+          </div>
+        </a>
+        </div>
+
+             <div class="swiper-slide" data-title="Dinas Pariwisata dan Ekonomi Kreatif">
+            <a href="DinasPariwisatadanEkonomiKreatif.html" >
+          <div class="bg-white text-black rounded-xl p-4 text-center shadow">
+            <img src="/public/Dinas Pariwisata dan Ekonomi Kreatif.png" alt="Instansi 26" class="mx-auto h-16 mb-3" />
+            <h3 class="text-sm font-semibold">Dinas Pariwisata dan Ekonomi Kreatif</h3>
+          </div>
+        </a>
+             </div>
+             
+
+         <div class="swiper-slide" data-title="Dinas Pemberdayaan Masyarakat Desa dan Transmigrasi">
+             <a href="DinasPemberdayaanMasyarakatDesadanTransmigrasi.html">
+          <div class="bg-white text-black rounded-xl p-4 text-center shadow">
+            <img src="/public/Dinas Pemberdayaan Masyarakat Desa dan Transmigrasi.png" alt="Instansi 26" class="mx-auto h-16 mb-3" />
+            <h3 class="text-sm font-semibold">Dinas Pemberdayaan Masyarakat Desa dan Transmigrasi</h3>
+          </div>
+        </a>
+        </div>
+
+         <div class="swiper-slide" data-title="Dinas Pemberdayaan Perempuan dan Anak">
+             <a href="DinasPemberdayaanPerempuandanPerlindunganAnak.html">
+          <div class="bg-white text-black rounded-xl p-4 text-center shadow">
+            <img src="/public/Dinas Pemberdayaan Perempuan dan Perlindungan Anak.png" alt="Instansi 26" class="mx-auto h-16 mb-3" />
+            <h3 class="text-sm font-semibold">Dinas Pemberdayaan Perempuan dan Anak </h3>
+          </div>
+        </a>
+        </div>
+        
+         <div class="swiper-slide" data-title="Dinas Pemuda dan Olah Raga">
+             <a href="DInasPemudadanOlahraga.html">
+          <div class="bg-white text-black rounded-xl p-4 text-center shadow">
+            <img src="/public/Dinas Pemuda dan Olah Raga.png" alt="Instansi 26" class="mx-auto h-16 mb-3" />
+            <h3 class="text-sm font-semibold">Dinas Pemuda dan Olah Raga Provinsi Lampung</h3>
+          </div>
+        </a>
+        </div>
+
+         <div class="swiper-slide" data-title="Dinas Penanaman Modal dan Pelayanan Terpadu">
+             <a href="DinasPenanamanModaldanPelayananTerpaduSatuPintu.html">
+          <div class="bg-white text-black rounded-xl p-4 text-center shadow">
+            <img src="/public/Dinas Penanaman Modal dan Pelayanan Terpadu Satu Pintu.png" alt="Instansi 26" class="mx-auto h-16 mb-3" />
+            <h3 class="text-sm font-semibold">Dinas Penanaman Modal dan Pelayanan Terpadu</h3>
+          </div>
+        </a>
+        </div>
+
+        <div class="swiper-slide" data-title="Dinas Pendidikan dan Kebudayaan">
+             <a href="DinasPendidikandanKebudayaan.html">
+          <div class="bg-white text-black rounded-xl p-4 text-center shadow">
+            <img src="/public/Dinas Pendidikan dan Kebudayaan.png" alt="Instansi 26" class="mx-auto h-16 mb-3" />
+            <h3 class="text-sm font-semibold">Dinas Pendidikan dan Kebudayaan</h3>
+          </div>
+        </a>
+        </div>
+
+        <div class="swiper-slide" data-title="Dinas Pengelolaan Sumber Daya Air">
+             <a href="DinasPengelolaanSDA.html" >
+          <div class="bg-white text-black rounded-xl p-4 text-center shadow">
+            <img src="/public/Dinas Pengelolaan Sumber Daya Air.png" alt="Instansi 26" class="mx-auto h-16 mb-3" />
+            <h3 class="text-sm font-semibold">Dinas Pengelolaan Sumber Daya Air</h3>
+          </div>
+        </a>
+        </div>
+
+        <div class="swiper-slide" data-title="Dinas Perindustrian dan Perdagangan">
+             <a href="DinasPerindustriandanPerdagangan.html">
+          <div class="bg-white text-black rounded-xl p-4 text-center shadow">
+            <img src="/public/Dinas Perindustrian dan Perdagangan.png" alt="Instansi 26" class="mx-auto h-16 mb-3" />
+            <h3 class="text-sm font-semibold">Dinas Perindustrian dan Perdagangan</h3>
+          </div>
+        </a>
+        </div>
+
+      <div class="swiper-slide" data-title="Dinas Perkebunan Provinsi Lampung">
+             <a href="DinasPerkebunan.html" >
+          <div class="bg-white text-black rounded-xl p-4 text-center shadow">
+            <img src="/public/Dinas Perkebunan.png" alt="Instansi 26" class="mx-auto h-16 mb-3" />
+            <h3 class="text-sm font-semibold">Dinas Perkebunan Provinsi Lampung</h3>
+          </div>
+        </a>
+        </div>
+
+        <div class="swiper-slide" data-title="Dinas Perpustakaan dan Kearsipan">
+             <a href="DinasPerpustakaandanKearsipan.html">
+          <div class="bg-white text-black rounded-xl p-4 text-center shadow">
+            <img src="/public/Dinas Perpustakaan dan Kearsipan Provinsi Lampung.png" alt="Instansi 26" class="mx-auto h-16 mb-3" />
+            <h3 class="text-sm font-semibold">Dinas Perpustakaan dan Kearsipan</h3>
+          </div>
+        </a>
+        </div>
+
+        <div class="swiper-slide" data-title="Dinas Perumahan, Pemukiman, Cipta Karya">
+             <a href="DinasPermahanKawasanPemukimandanCiptaKarya.html" >
+          <div class="bg-white text-black rounded-xl p-4 text-center shadow">
+            <img src="/public/Dinas Perumahan, Kawasan Pemukiman dan Cipta Karya.png" alt="Instansi 26" class="mx-auto h-16 mb-3" />
+            <h3 class="text-sm font-semibold">Dinas Perumahan, Pemukiman, Cipta Karya</h3>
+          </div>
+        </a>
+        </div>
+
+        <div class="swiper-slide" data-title="Dinas Peternakan dan Kesehatan Hewan">
+             <a href="DinasPeternakandanKesehatanHewan.html">
+          <div class="bg-white text-black rounded-xl p-4 text-center shadow">
+            <img src="/public/Dinas Peternakan dan Kesehatan Hewan.png" alt="Instansi 26" class="mx-auto h-16 mb-3" />
+            <h3 class="text-sm font-semibold">Dinas Peternakan dan Kesehatan Hewan</h3>
+          </div>
+        </a>
+        </div>
+
+        <div class="swiper-slide" data-title="Dinas Sosial Provinsi Lampung">
+             <a href="DinasSosisal.html">
+          <div class="bg-white text-black rounded-xl p-4 text-center shadow">
+            <img src="/public/Dinas Sosial.png" alt="Instansi 26" class="mx-auto h-16 mb-3" />
+            <h3 class="text-sm font-semibold">Dinas Sosial Provinsi Lampung</h3>
+          </div>
+        </a>
+        </div>
+
+        <div class="swiper-slide" data-title="Dinas Tenaga Kerja Provinsi Lampung">
+             <a href="DinasTenagaKErja.html" >
+          <div class="bg-white text-black rounded-xl p-4 text-center shadow">
+            <img src="/public/Dinas Tenaga Kerja.png" alt="Instansi 26" class="mx-auto h-16 mb-3" />
+            <h3 class="text-sm font-semibold">Dinas Tenaga Kerja Provinsi Lampung</h3>
+          </div>
+        </a>
+        </div>
+
+        <div class="swiper-slide" data-title="Dinas Perhubungan Provinsi Lampung">
+             <a href="DInasPerhubungan.html">
+          <div class="bg-white text-black rounded-xl p-4 text-center shadow">
+            <img src="/public/dishub.jpg" alt="Instansi 26" class="mx-auto h-16 mb-3" />
+            <h3 class="text-sm font-semibold">Dinas Perhubungan Provinsi Lampung</h3>
+          </div>
+        </a>
+        </div>
+
+        <div class="swiper-slide" data-title="Inspektorat Provinsi Lampung">
+             <a href="Inspektroat.html">
+          <div class="bg-white text-black rounded-xl p-4 text-center shadow">
+            <img src="/public/Inspektorat.png" alt="Instansi 26" class="mx-auto h-16 mb-3" />
+            <h3 class="text-sm font-semibold">Inspektorat Provinsi Lampung</h3>
+          </div>
+        </a>
+        </div>
+
+        <div class="swiper-slide" data-title="Dinas Komunikasi Informasi dan Statistik">
+             <a href="diskominfotik.html">
+          <div class="bg-white text-black rounded-xl p-4 text-center shadow">
+            <img src="/public/LogoDiskominfotik.png" alt="Instansi 26" class="mx-auto h-16 mb-3" />
+            <h3 class="text-sm font-semibold">Dinas Komunikasi Informasi dan Statistik</h3>
+          </div>
+        </a>
+        </div>
+
+        <div class="swiper-slide" data-title="Rumah Sakit Jiwa Daerah Provinsi Lampung">
+             <a href="RSJiwaDaerah.html">
+          <div class="bg-white text-black rounded-xl p-4 text-center shadow">
+            <img src="/public/RS Jiwa Daerah.png" alt="Instansi 26" class="mx-auto h-16 mb-3" />
+            <h3 class="text-sm font-semibold">Rumah Sakit Jiwa Daerah Provinsi Lampung</h3>
+          </div>
+        </a>
+        </div>
+
+        <div class="swiper-slide" data-title="RSUD Bandar Negara Husada">
+             <a href="RSUDBandarNegaraHusada.html">
+          <div class="bg-white text-black rounded-xl p-4 text-center shadow">
+            <img src="/public/RSUD Bandar Negara Husada.png" alt="Instansi 26" class="mx-auto h-16 mb-3" />
+            <h3 class="text-sm font-semibold">RSUD Bandar Negara Husada Provinsi Lampung</h3>
+          </div>
+        </a>
+        </div>
+
+        <div class="swiper-slide" data-title="RSUD Dr. H. Abdoel Moeloek">
+             <a href="RSUDAbdoelMoeloek.html">
+          <div class="bg-white text-black rounded-xl p-4 text-center shadow">
+            <img src="/public/RSUD Dr. H. Abdoel Moeloek.png" alt="Instansi 26" class="mx-auto h-16 mb-3" />
+            <h3 class="text-sm font-semibold">RSUD Dr. H. Abdoel Moeloek Provinsi Lampung</h3>
+          </div>
+        </a>
+        </div>
+
+        <div class="swiper-slide" data-title="Satuan Polisi Pamong Praja">
+             <a href="SatuanPolisiPamongPraja.html">
+          <div class="bg-white text-black rounded-xl p-4 text-center shadow">
+            <img src="/public/Satuan Polisi Pamong Praja.png" alt="Instansi 26" class="mx-auto h-16 mb-3" />
+            <h3 class="text-sm font-semibold">Satuan Polisi Pamong Praja Provinsi Lampung</h3>
+          </div>
+        </a>
+        </div>
+
+        <div class="swiper-slide" data-title="Sekretariat DPRD Provinsi Lampung">
+        <a href="SekretariatDPRDProvLampung.html" >
+          <div class="bg-white text-black rounded-xl p-4 text-center shadow">
+            <img src="/public/Sekretariat DPRD Provinsi Lampung.png" alt="Instansi 26" class="mx-auto h-16 mb-3" />
+            <h3 class="text-sm font-semibold">Sekretariat DPRD Provinsi Lampung</h3>
+          </div>
+        </a>
+        </div>
+
+      </div>
+      <div class="swiper-button-next text-white z-50"></div>
+      <div class="swiper-button-prev text-white z-50"></div>
+    </div>
+  </div>
+</section>
+
+
+  <!-- Footer -->
+<footer class="bg-[#E6E6E6] text-black py-6">
+  <div class="max-w-7xl mx-auto px-4 text-center space-y-2">
+    <p class="text-base font-semibold">
+      Dinas Komunikasi Informatika dan Statistik Provinsi Lampung
+    </p>
+    <p class="text-sm">📍 Jl. WR Monginsidi No.69 Bandar Lampung</p>
+    <p class="text-sm">☎️ (0721) 481107</p>
+  </div>
+</footer>
+
+
+  <!-- Script Interaktif -->
+  <script>
+    const dinasList = [
+      { name: "BADAN KEPEGAWAIAN DAERAH", link: "BadanKepegawaianDaerah.html" },
+      { name: "BADAN KESATUAN BANGSA DAN POLITIK", link: "BadanKesatuanBangsadanPolitik.html" },
+      { name: "BADAN PENANGGULANGAN BENCANA DAERAH", link: "BadanPenanggulanganBencanaDaerah.html" },
+      { name: "BADAN PENDAPATAN DAERAH", link: "BadanPendapatanDaerah.html" },
+      { name: "BADAN PENELITIAN DAN PENGEMBANGAN DAERAH", link: "BadanPenelitiandanPengembanganDaerah.html" },
+      { name: "BADAN PENGELOLA KEUANGAN DAN ASET DAERAH", link: "BadanPengelolaKeuangandanAsetDaerah.html" },
+      { name: "BADAN PENGEMBANGAN SUMBER DAYA MANUSIA DAERAH", link: "BadanPengembanganSDM.html" },
+      { name: "BADAN PENGHUBUNG PROVINSI LAMPUNG DI JAKARTA", link: "BadanPenghubungProvLampung-Jakarta.html" },
+      { name: "BADAN PERENCANAAN PEMBANGUNAN DAERAH", link: "BadanPerencaanPembangunanDaerah.html" },
+      { name: "BIRO ADMINISTRASI PEMBANGUNAN", link: "BiroAdministrasiPembangunan.html" },
+      { name: "BIRO ADMINISTRASI PIMPINAN", link: "BiroAdministrasiPimpinan.html" },
+      { name: "BIRO HUKUM SEKRETARIAT DAERAH", link: "BIroHukumSekretariatDaerah.html" },
+      { name: "BIRO KESEJAHTERAAN SOSIAL SEKRETARIAT DAERAH", link: "BiroKesejahteraanSosialSekretariatDaerah.html" },
+      { name: "BIRO ORGANISASI SEKRETARIAT DAERAH", link: "BiroOrganisasiSekretariatDaerah.html" },
+      { name: "BIRO PEMERINTAHAN DAN OTD SEKRETARIAT DAERAH", link: "BiroPemerintahandanOtdaSekretariatDaerah.html" },
+      { name: "BIRO PENGADAAN BARANG DAN JASA SEKRETARIAT DAERAH", link: "BiroPengadaanBarangdanjasaSekretariatDaerah.html" },
+      { name: "BIRO PEREKONOMIAN SEKRETARIAT DAERAH", link: "BiroPerekonomianSekretariatDaerah.html" },
+      { name: "BIRO UMUM SEKRETARIAT DAERAH", link: "BiroUmumSekretariatDaerah.html" },
+      { name: "CSIRT LAMPUNG", link: "CSIRT-Tim.html" },
+      { name: "DINAS BINA MARGA DAN BINA KONSTRUKSI", link: "DinasBinaMargadanBinaKonstruksi.html" },
+      { name: "DINAS ENERGI DAN SUMBER DAYA MINERAL", link: "DinasEnergidanSDM.html" },
+      { name: "DINAS KEHUTANAN", link: "DinasKehutanan.html" },
+      { name: "DINAS KELAUTAN DAN PERIKANAN", link: "DinasKelautandanPerikanan.html" },
+      { name: "DINAS KEPENDUDUKAN DAN PENCATATAN SIPIL", link: "DinasKependudukandanPencatatanSipil.html" },
+      { name: "DINAS KESEHATAN", link: "DInasKesehatan.html" },
+      { name: "DINAS KETAHANAN PANGAN, TANAMAN PANGAN DAN HORTIKULTURA", link: "DinasKetahananPangandanHortikultura.html" },
+      { name: "DINAS KOPERASI, USAHA KECIL DAN MENENGAH", link: "DinasKoperasi-UKM.html" },
+      { name: "DINAS LINGKUNGAN HIDUP", link: "DinasLingkunganHidup.html" },
+      { name: "DINAS PARIWISATA DAN EKONOMI KREATIF", link: "DinasPariwisatadanEkonomiKreatif.html" },
+      { name: "DINAS PEMBERDAYAAN MASYARAKAT DESA DAN TRANSMIGRASI", link: "DinasPemberdayaanMasyarakatDesadanTransmigrasi.html" },
+      { name: "DINAS PEMBERDAYAAN PEREMPUAN DAN PERLINDUNGAN ANAK", link: "DinasPemberdayaanPerempuandanPerlindunganAnak.html" },
+      { name: "DINAS PEMUDA DAN OLAH RAGA", link: "DInasPemudadanOlahraga.html" },
+      { name: "DINAS PENANAMAN MODAL DAN PELAYANAN TERPADU SATU PINTU", link: "DinasPenanamanModaldanPelayananTerpaduSatuPintu.html" },
+      { name: "DINAS PENDIDIKAN DAN KEBUDAYAAN", link: "DinasPendidikandanKebudayaan.html" },
+      { name: "DINAS PENGELOLAAN SUMBER DAYA AIR", link: "DinasPengelolaanSDA.html" },
+      { name: "DINAS PERINDUSTRIAN DAN PERDAGANGAN", link: "DinasPerindustriandanPerdagangan.html" },
+      { name: "DINAS PERKEBUNAN", link: "DinasPerkebunan.html" },
+      { name: "DINAS PERPUSTAKAAN DAN KEARSIPAN", link: "DinasPerpustakaandanKearsipan.html" },
+      { name: "DINAS PERUMAHAN, KAWASAN PEMUKIMAN DAN CIPTA KARYA", link: "DinasPermahanKawasanPemukimandanCiptaKarya.html" },
+      { name: "DINAS PETERNAKAN DAN KESEHATAN HEWAN", link: "DinasPeternakandanKesehatanHewan.html" },
+      { name: "DINAS SOSIAL", link: "DinasSosisal.html" },
+      { name: "DINAS TENAGA KERJA", link: "DinasTenagaKErja.html" },
+      { name: "DINAS PERHUBUNGAN", link: "DInasPerhubungan.html" },
+      { name: "INSPEKTORAT PROVINSI LAMPUNG", link: "Inspektroat.html" },
+      { name: "DISKOMINFO LAMPUNG", link: "diskominfotik.html" },
+      { name: "RUMAH SAKIT JIWA DAERAH PROVINSI LAMPUNG", link: "RSJiwaDaerah.html" },
+      { name: "RSUD BANDAR NEGARA HUSADA", link: "RSUDBandarNegaraHusada.html" },
+      { name: "RSUD DR. H. ABDOEL MOELOEK", link: "RSUDAbdoelMoeloek.html" },
+      { name: "SATUAN POLISI PAMONG PRAJA", link: "SatuanPolisiPamong Praja.html" },
+      { name: "SEKRETARIAT DPRD PROVINSI LAMPUNG", link: "SekretariatDPRDProvLampung.html" }
+    ];
+
+    const input = document.getElementById("search-input");
+    const resultsBox = document.getElementById("search-results");
+
+    input.addEventListener("keyup", function () {
+      const keyword = this.value.toLowerCase();
+      resultsBox.innerHTML = "";
+
+      if (keyword === "") {
+        resultsBox.classList.add("hidden");
+        return;
+      }
+
+      const filtered = dinasList.filter(dinas =>
+        dinas.name.toLowerCase().includes(keyword)
+      );
+
+      if (filtered.length > 0) {
+        filtered.forEach(dinas => {
+          const li = document.createElement("li");
+          li.innerHTML = `<a href="${dinas.link}" class="block px-4 py-2 hover:bg-gray-200">${dinas.name}</a>`;
+          resultsBox.appendChild(li);
+        });
+        resultsBox.classList.remove("hidden");
+      } else {
+        resultsBox.classList.add("hidden");
+      }
+    });
+
+    document.addEventListener("click", function (e) {
+      if (!resultsBox.contains(e.target) && e.target !== input) {
+        resultsBox.classList.add("hidden");
+      }
+    });
+
+    // Smooth scroll script
+    document.querySelectorAll('.scroll-link').forEach(link => {
+      link.addEventListener('click', e => {
+        e.preventDefault();
+        const href = link.getAttribute('href');
+        document.querySelector(href).scrollIntoView({ behavior: 'smooth' });
+      });
+    });
+  </script>
+
+
+
+<!-- Script -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+  const originalSlides = Array.from(document.querySelectorAll(".swiperBagian2 .swiper-slide"));
+  const swiper2 = new Swiper(".swiperBagian2", {
+    slidesPerView: 1,
+    spaceBetween: 16,
+    loop: false,
+    grid: {
+      rows: 2,
+      fill: "row"
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev"
+    },
+    breakpoints: {
+      640: { slidesPerView: 2 },
+      768: { slidesPerView: 3 },
+      1024: { slidesPerView: 4 },
+      1280: { slidesPerView: 5 }
+    }
+  });
+
+  // Fungsi bantu: dapatkan slidesPerView aktif sekarang
+  function getCurrentSlidesPerView(swiperInstance) {
+    const width = window.innerWidth;
+    const breakpoints = swiperInstance.params.breakpoints || {};
+    let currentView = swiperInstance.params.slidesPerView;
+
+    Object.keys(breakpoints).forEach(bp => {
+      if (width >= bp) {
+        currentView = breakpoints[bp].slidesPerView;
+      }
+    });
+
+    return currentView;
+  }
+
+  // Event search
+  document.getElementById("searchInput").addEventListener("input", function () {
+    const search = this.value.toLowerCase();
+
+    swiper2.removeAllSlides();
+
+    const filteredSlides = originalSlides.filter(slide => {
+      const title = slide.dataset.title || "";
+      return title.toLowerCase().includes(search);
+    });
+
+    const clonedSlides = filteredSlides.map(slide => slide.cloneNode(true));
+    swiper2.appendSlide(clonedSlides);
+
+    // Set baris menjadi 1 jika hasil <= jumlah dalam satu baris
+    const slidesPerView = getCurrentSlidesPerView(swiper2);
+    swiper2.params.grid.rows = (clonedSlides.length <= slidesPerView) ? 1 : 2;
+
+    swiper2.update();
+  });
+</script>
+
+
+
+
+<script>
+    // Toggle dropdown visibility
+    document.getElementById('dropdownButton').addEventListener('click', function () {
+      const menu = document.getElementById('dropdownMenu');
+      menu.classList.toggle('hidden');
+    });
+
+    // Sembunyikan dropdown saat klik di luar
+    window.addEventListener('click', function (e) {
+      const button = document.getElementById('dropdownButton');
+      const menu = document.getElementById('dropdownMenu');
+      if (!button.contains(e.target) && !menu.contains(e.target)) {
+        menu.classList.add('hidden');
+      }
+    });
+  </script>
+
+
+</body>
+</html>
